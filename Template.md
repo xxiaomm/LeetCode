@@ -3,7 +3,7 @@
 
 
 
-### Clarification
+### Clarifications / Constraints
 
 1. 
 
