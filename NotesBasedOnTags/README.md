@@ -1,8 +1,17 @@
 # Notes Based On Tags
 
-- Binary Search
-- Two Pointers / Sliding Window
-- Linked List
-- Binary Tree
-- Graph
-- 
+- [Sort](./Sort.md)
+- [Linked List](./LinkedList.md)
+- [Binary Search](./Binary%20Search.md)
+- [Two Pointers](./Two%20Pointer.md)
+- [Sliding Window](./Sliding%20Window.md)
+- [Prefix Sum](./Prefix%20Sum.md)
+- [Stack](./Stack.md)
+- [Monotonic Stack](./Monotonic%20Stack.md)
+- [Heap / Monotonic Queue](./Heap(Monotonic%20Queue).md)
+- [BackTracking](./Backtracking.md)
+- [Binary Tree](./Binary%20Tree.md)
+- [DFS vs BFS](./DFS%20vs.%20BFS.md)
+- [Graph Basic & Algo](./Graph%20Basic%20%26%20Algo.md)
+- [Topological Sort](./Topological%20Sort.md)
+- [Union Find](./Union%20Find.md)
