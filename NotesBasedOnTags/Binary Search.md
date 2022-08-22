@@ -1,10 +1,5 @@
-# Binary Search
-reference:  
-https://github.com/lilyzhaoyilu/LeetCode-Notes/blob/master/NotesBasedOnCategories/Binary%20Search%20Updated.md   
-https://github.com/lilyzhaoyilu/LeetCode-Notes/blob/master/NotesBasedOnCategories/Binary%20Search.md   
-https://github.com/azl397985856/leetcode/blob/master/91/binary-search.md     
-https://lucifer.ren/blog/2021/03/08/binary-search-1/      
-https://lucifer.ren/blog/2021/03/23/binary-search-2/   
+## Binary Search
+ 
 
 - [Binary Search](#binary-search)
   - [Hints to use](#hints-to-use)
@@ -25,6 +20,7 @@ https://lucifer.ren/blog/2021/03/23/binary-search-2/
     - [前缀和二分](#前缀和二分)
     - [插入排序二分](#插入排序二分)
   - [题目推荐](#题目推荐)
+  - [Reference:](#reference)
 
 
 二分查找又称折半搜索算法。 狭义地来讲，二分查找是一种在有序数组查找某一特定元素的搜索算法。这同时也是大多数人所知道的一种说法。实际上， 广义的二分查找是将问题的规模缩小到原有的一半。类似的，三分法就是将问题规模缩小为原来的 1/3。   
@@ -33,7 +29,7 @@ https://lucifer.ren/blog/2021/03/23/binary-search-2/
 - 舍弃哪部分
 
 
-## Hints to use
+### Hints to use
 
 1. 排序数组 (30% - 40%) (如果无序考虑排序，注意排序算法的时间复杂度)
 2. 找比 O(N)更小时间复杂度算法 (99%)
@@ -42,7 +38,7 @@ https://lucifer.ren/blog/2021/03/23/binary-search-2/
 5. 两段有序数组,. 第k小？
 33 153 1095 852
 
-## Complexity
+### Complexity
 
 - 平均时间复杂度： $O(logN)$
 - 最坏时间复杂度： $O(logN)$
@@ -52,7 +48,7 @@ https://lucifer.ren/blog/2021/03/23/binary-search-2/
   - 递归：$O(logN)$（无尾调用消除）
 
 
-## 题型
+### 题型
 
 - [寻找目标值](#寻找目标值)
 - [找满足条件的最左]
@@ -61,9 +57,9 @@ https://lucifer.ren/blog/2021/03/23/binary-search-2/
   
 
 
-## 模板
+### 模板
 
-### 寻找目标值
+#### 寻找目标值
 
 - 搜索 [left, right]
 - 终止条件: left <= right
@@ -96,7 +92,7 @@ class Solution {
 }
 ```
 
-### 寻找最左边的满足条件的值
+#### 寻找最左边的满足条件的值
 
 - (最左二分不断收缩右边界，最终返回左边界)  
 - 搜索 [left, right]
@@ -155,7 +151,7 @@ class Solution {
 }
 ```
 
-### 寻找最右边的满足条件的值
+#### 寻找最右边的满足条件的值
 
 - (最右二分不断收缩左边界，最终返回右边界)
 - 搜索 [left, right]
@@ -192,7 +188,7 @@ class Solution {
 }
 ```
 
-### 局部有序(先降后升或先升后降)
+#### 局部有序(先降后升或先升后降)
 
 题目: LC [33](https://leetcode.com/problems/search-in-rotated-sorted-array/), [81](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/), [153](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/), [154](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/)   
 
@@ -201,33 +197,33 @@ class Solution {
 - 若 mid > left, mid 一定在左边有序部分;
 - 判断 target 和 mid的关系 = > 收缩左边界/右边界
 
-### 自己构造有序序列   
+#### 自己构造有序序列   
 
 题目: [Triple Inversion](https://binarysearch.com/problems/Triple-Inversion)
 
-### 极值
+#### 极值
 
 题目: [Kth Pair Distance](https://binarysearch.com/problems/Kth-Pair-Distance)
 
 
-### 二维数组
+#### 二维数组
 
 题目: LC [74](https://leetcode-com.com/problems/search-a-2d-matrix/), [240](https://leetcode-com.com/problems/search-a-2d-matrix-ii/) 
 
-### 二叉搜索树
+#### 二叉搜索树
 
 如果你用数组表示过完全二叉树，那么就很容易理解。 我们可以发现，左节点的编号都是父节点的二倍，并且右节点都是父节点的二倍 + 1。从二进制的角度来看就是：父节点的编号左移一位就是左节点的编号，左移一位 + 1 就是右节点的编号。 因此反过来， 知道了子节点的最后一位，我们就能知道它是父节点的左节点还是右节点啦。
 
 
 
-## 二分法四大应用技巧
+### 二分法四大应用技巧
 
 - [能力检测（普通二分的分化）](#能力检测普通二分的分化)
 - [计数二分（普通二分的分化）](#计数二分普通二分的分化)
 - [前缀和二分](#前缀和二分)
 - [插入排序二分](#插入排序二分)
 
-### 能力检测（普通二分的分化）
+#### 能力检测（普通二分的分化）
 
 题目: LC [875](https://leetcode.com/problems/koko-eating-bananas/description/), [475](https://leetcode.com/problems/heaters/), [778](https://leetcode.com/problems/swim-in-rising-water/),  
 [Minimum Light Radius](https://binarysearch.com/problems/Minimum-Light-Radius)
@@ -249,7 +245,7 @@ def ability_test_bs(nums):
 ```
 和最左最右二分这两种最最基本的类型相比，能力检测二分只是将 while 内部的 if 语句调整为了一个函数罢了。因此能力检测二分也分最左和最右两种基本类型。
 
-### 计数二分（普通二分的分化）
+#### 计数二分（普通二分的分化）
 
 题目: [Kth Pair Distance](https://binarysearch.com/problems/Kth-Pair-Distance)
 
@@ -285,14 +281,14 @@ def count_bs(nums, k):
 ```
 
 
-### 前缀和二分
+#### 前缀和二分
 
 题目: LC [327](https://leetcode.com/problems/count-of-range-sum/), 用到 merge sort + divide & conqure
 构建有序数组： 分治 -> 保证index不乱的同时还能把数组划分成俩升序数组
 
 如果数组全是正的，那么其前缀和就是一个严格递增的数组，基于这个特性，我们可以在其之上做二分。也可以在前缀和头部增加[0]简化 i-1 的判断。
 
-### 插入排序二分
+#### 插入排序二分
 
 题目: [剑指 Offer 51. 数组中的逆序对](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/), [327](https://leetcode-com.com/problems/count-of-range-sum), [493](https://leetcode-cn.com/problems/reverse-pairs/),
 
@@ -320,7 +316,7 @@ for a in A:
 ```
 上面代码的 d 就是有序序列。
 
-## 题目推荐
+### 题目推荐
 
 - [875. 爱吃香蕉的珂珂](https://leetcode.com/problems/koko-eating-bananas/)
 - [300. 最长上升子序列](https://leetcode.com/problems/longest-increasing-subsequence/description/)
@@ -331,3 +327,11 @@ for a in A:
 
 
 *特别需要注意的是**有无重复元素**对二分算法影响很大，我们需要小心对待。*
+
+
+### Reference:  
+https://github.com/lilyzhaoyilu/LeetCode-Notes/blob/master/NotesBasedOnCategories/Binary%20Search%20Updated.md   
+https://github.com/lilyzhaoyilu/LeetCode-Notes/blob/master/NotesBasedOnCategories/Binary%20Search.md   
+https://github.com/azl397985856/leetcode/blob/master/91/binary-search.md     
+https://lucifer.ren/blog/2021/03/08/binary-search-1/      
+https://lucifer.ren/blog/2021/03/23/binary-search-2/  

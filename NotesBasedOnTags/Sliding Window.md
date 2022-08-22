@@ -1,6 +1,15 @@
-# Sliding window
+## Sliding window
 
-
+- [Sliding window](#sliding-window)
+  - [Complexity](#complexity)
+  - [常见使用](#常见使用)
+  - [常见题型](#常见题型)
+  - [固定窗口大小](#固定窗口大小)
+  - [求满足条件最大窗口/最小窗口](#求满足条件最大窗口最小窗口)
+    - [至多有K个不同的数字/字母(最大窗口)](#至多有k个不同的数字字母最大窗口)
+    - [允许修改K次 -> 使得unique(只有一种字母/数字)的子串最长 (最大窗口)](#允许修改k次---使得unique只有一种字母数字的子串最长-最大窗口)
+    - [(最大窗口)](#最大窗口)
+- [Reference](#reference)
 
 
 ### Complexity
@@ -24,7 +33,7 @@ Space: O(1) / O(constant integer).
 -[求满足条件最大窗口/最小窗口](#题型-求满足条件最大窗口/最小窗口)
 
 
-#### 题型 固定窗口大小
+### 固定窗口大小
 
 1. l 初始化 0
 2. r 初始化 r - l + 1 => 窗口大小
@@ -37,7 +46,7 @@ Space: O(1) / O(constant integer).
 
 
 
-#### 题型 求满足条件最大窗口/最小窗口
+### 求满足条件最大窗口/最小窗口
 
 1. l, r 初始化为 0
 2. r++
@@ -47,7 +56,7 @@ Space: O(1) / O(constant integer).
 - 如果不满足，重复  
   就是 r 指针不停向右移动，l 指针仅仅在窗口满足条件之后才会移动，起到窗口收缩的效果。
 
-#### 伪代码
+**伪代码**
 ```java
 初始化慢指针 = 0
 初始化 ans
@@ -61,7 +70,7 @@ for 快指针 in 可迭代集合
 返回 ans
 ```
 
-#### 模板代码
+**模板代码**  
 [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) (最小窗口)
 
 ```java
@@ -83,7 +92,7 @@ class Solution {
 ```
 
 
-### 至多有K个不同的数字/字母(最大窗口)
+#### 至多有K个不同的数字/字母(最大窗口)
 
 1. 求其最长的长度(子数组/子串); 
 2. 求子数组个数;
@@ -91,7 +100,7 @@ class Solution {
 (k=1 没有重复的最长子串: O(n), O(min(128,s.length) )
 例题: LeetCode 3, 159, 340, 904, 992,
 
-#### 模板代码
+**模板代码**    
 [340. Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) (最大窗口)
 
 ```java
@@ -145,12 +154,12 @@ public int longestSub(string s, int k) {
 ```
 
 
-### 允许修改K次 -> 使得unique(只有一种字母/数字)的子串最长 (最大窗口)
+#### 允许修改K次 -> 使得unique(只有一种字母/数字)的子串最长 (最大窗口)
 
 (没有重复的最长子串: O(n), O(min(128,s.length) )  
 例题: LeetCode 424, 487, 1004, 2024 
 
-#### 模板代码
+**模板代码**
 
 [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) (最大窗口)
 
@@ -175,15 +184,20 @@ class Solution {
 ```
 
 
-###  (最大窗口)
+####  (最大窗口)
 
 (没有重复的最长子串: O(n), O(min(128,s.length) )  
 例题: LeetCode 424, 487, 1004, 2024 
 
-#### 模板代码
+**模板代码**
 
 [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) (最大窗口)
 
 ```java
 
 ```
+
+
+
+
+## Reference

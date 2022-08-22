@@ -1,24 +1,26 @@
-https://github.com/lilyzhaoyilu/LeetCode-Notes/blob/master/NotesBasedOnCategories/Binary%20Tree.md    
-https://github.com/azl397985856/leetcode/blob/master/thinkings/tree.md
 
-# Binary Tree
 
-reference: https://github.com/azl397985856/leetcode/blob/master/thinkings/tree.md
 
-## 目录
+
+## Binary Tree
+
 - [Binary Tree](#binary-tree)
-  - [目录](#目录)
-    - [BFS](#bfs)
-      - [Approaches](#approaches)
-      - [Scenarios](#scenarios)
-    - [DFS](#dfs)
-      - [Approaches](#approaches-1)
-      - [Scenarios](#scenarios-1)
-    - [Complexity](#complexity)
-    - [题型](#题型)
-      - [构建类题](#构建类题)
-      - [搜索类题](#搜索类题)
-      - [修改类题](#修改类题)
+  - [BFS](#bfs)
+    - [Approaches](#approaches)
+    - [Scenarios](#scenarios)
+  - [DFS](#dfs)
+    - [Approaches](#approaches-1)
+    - [Scenarios](#scenarios-1)
+  - [Complexity](#complexity)
+  - [题型](#题型)
+    - [构建类题](#构建类题)
+    - [搜索类题](#搜索类题)
+    - [修改类题](#修改类题)
+  - [Basic knowledge](#basic-knowledge)
+    - [delete node(BST)](#delete-nodebst)
+  - [Reference:](#reference)
+
+遍历(path)、构造、delete node、recover tree、判断validate tree、balanced/depth、 diameter、 next pointer、
 
 
 ### BFS
@@ -177,10 +179,19 @@ DFS or BFS
 #### 修改类题
 
 
+### Basic knowledge
+
+#### delete node(BST)
+BST删除节点：
+1. 没有子树，直接删
+2. 只有左子树或右子树，左子树或右子树直接成为root
+3. 左右子树都有，左子树的最右节点predecessor / 右子树的最左节点sucessor成为root
 
 
-遍历
-构造
-path
-balanced
-recover
+
+### Reference:    
+https://github.com/lilyzhaoyilu/LeetCode-Notes/blob/master/NotesBasedOnCategories/Binary%20Tree.md    
+https://github.com/azl397985856/leetcode/blob/master/thinkings/tree.md    
+https://github.com/azl397985856/leetcode/blob/master/thinkings/tree.md
+
+
