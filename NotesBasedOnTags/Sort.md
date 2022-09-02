@@ -1,8 +1,0 @@
-
-
-### Quick Sort
-
-
-### Merge Sort
-
-

@@ -187,11 +187,25 @@ BST删除节点：
 2. 只有左子树或右子树，左子树或右子树直接成为root
 3. 左右子树都有，左子树的最右节点predecessor / 右子树的最左节点sucessor成为root
 
+#### 树的种类
+- Complete Binary Tree(完全二叉树)
+除了最后一层之外的其他每一层都被完全填充，并且所有结点都保持向左对齐。
 
+<img src="../images/Tree/CompleteBinaryTree.png" width="600">
+
+- Perfect Binary Tree(完美二叉树)
+除了叶子结点之外的每一个结点都有两个孩子，每一层(当然包含最后一层)都被完全填充。
+
+<img src="../images/Tree/PerfectBinaryTree.png" width="300">
+
+- Full Binary Tree(满二叉树)
+   - 国内：如果每一个层的结点数都达到最大值，则这个二叉树就是满二叉树。就是完美二叉树。
+   - 国外：除了叶子结点之外的每一个结点都有两个孩子结点。
+
+<img src="../images/Tree/FullBinaryTree.png" width="550">
 
 ### Reference:    
-https://github.com/lilyzhaoyilu/LeetCode-Notes/blob/master/NotesBasedOnCategories/Binary%20Tree.md    
-https://github.com/azl397985856/leetcode/blob/master/thinkings/tree.md    
-https://github.com/azl397985856/leetcode/blob/master/thinkings/tree.md
+[易潇](https://github.com/lilyzhaoyilu/LeetCode-Notes/blob/master/NotesBasedOnCategories/Binary%20Tree.md)     
+[lucifer](https://github.com/azl397985856/leetcode/blob/master/thinkings/tree.md)    
 
-
+[lucifer](https://lucifer.ren/blog/2020/11/23/tree/)

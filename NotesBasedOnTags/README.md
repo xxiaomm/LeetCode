@@ -1,6 +1,6 @@
 # Notes Based On Tags
 
-- [Sort](./Sort.md)
+- [Sorting](./Sorting.md)
 - [Linked List](./LinkedList.md)
 - [Binary Search](./Binary%20Search.md)
 - [Two Pointers](./Two%20Pointer.md)
@@ -8,7 +8,7 @@
 - [Prefix Sum](./Prefix%20Sum.md)
 - [Stack](./Stack.md)
 - [Monotonic Stack](./Monotonic%20Stack.md)
-- [Heap / Monotonic Queue](./Heap(Monotonic%20Queue).md)
+- [Heap / Priority Queue](./Heap(Priority%20Queue).md)
 - [BackTracking](./Backtracking.md)
 - [Binary Tree](./Binary%20Tree.md)
 - [DFS vs BFS](./DFS%20vs.%20BFS.md)

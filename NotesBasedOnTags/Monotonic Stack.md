@@ -173,8 +173,8 @@ public class Solution {
 #### 和Greedy搭配使用
 
 题目：
-- [316. Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/)(same as 
-- [1081](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/))【[力扣加加题解](https://leetcode.cn/problems/remove-duplicate-letters/solution/yi-zhao-chi-bian-li-kou-si-dao-ti-ma-ma-zai-ye-b-4/)】
+- [316. Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/)(same as 1081)
+- [1081](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/)【[力扣加加题解](https://leetcode.cn/problems/remove-duplicate-letters/solution/yi-zhao-chi-bian-li-kou-si-dao-ti-ma-ma-zai-ye-b-4/)】
 
 
 

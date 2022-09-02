@@ -9,6 +9,10 @@
 
 ## 环检测
 
+1. DFS: 使用 visited 数组和路径 path, 看是否会遍历到已经在 path 中的 node, 若能 -> 有环   
+   「三色标记法」:    
+   白色 / 0: 尚未被访问, 灰色 / 1: 位于递归栈中 / 在某个环上, 黑色 / 2: 搜索完毕，是一个安全节点, 
+2. 拓扑排序: 若能构造一个拓扑排序结果 -> 无环, 否则有环
 
 
 
@@ -42,6 +46,47 @@
 3. 找出入度变为 0 的 node，重复第 2 步。
 4. 直至所有数据的入度为 0，得到排序，如果还有数据的入度不为 0，说明图中存在环。
 
+eg. [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
+```java
+class Solution {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        List<Integer>[] graph = new List[numCourses];
+        buildGraph(graph, prerequisites);
+        int[] indegree = new int[numCourses];
+        // 构建 indegree 数组
+        for (int[] edge: prerequisites)
+            indegree[edge[0]]++;
+        // BFS
+        Queue<Integer> q = new LinkedList<>();
+        // 将度为 0 的 node 入队列
+        for (int i = 0; i< indegree.length; i++) {
+            if(indegree[i] == 0)
+                q.offer(i);
+        }
+        
+        int count = 0;
+        while (!q.isEmpty()) {
+            int cur = q.poll();
+            count++;
+            for (int vertex: graph[cur]){   // cur -> vertexes
+                indegree[vertex]--;   // 将 cur 指向的 node 的入度 - 1
+                if (indegree[vertex] == 0)  // 再把入度为 0 的 node 入队
+                    q.offer(vertex);
+            }
+        }
+        return count == numCourses;
+    }
+    // 图的建立
+    public void buildGraph(List<Integer>[] graph, int[][] prerequisites) {
+        for (int i = 0; i < graph.length; i++)
+            graph[i] = new LinkedList<>();
+        // graph[i] 代表 i 是 graph[i] 这个list里面所有课的先修课
+        for (int i = 0; i < prerequisites.length; i++) 
+            graph[prerequisites[i][1]].add(prerequisites[i][0]);
+            // prerequisites[i][1] 是 prerequisites[i][0] 的先修课
+    }
+}
+```
 
 ### 题目
 - [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
