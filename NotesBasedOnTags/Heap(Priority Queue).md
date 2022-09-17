@@ -12,7 +12,7 @@
     - [实现](#实现)
 
 
-<img src="../images/Heap/Heap脑图.jpeg" width="500px">
+<img src="../images/Heap/Heap脑图.jpeg" >
 
 
 ## 核心
@@ -43,11 +43,11 @@
 往下下沉的过程，其实有两个方向可供选择，是下沉到左子节点？还是下沉到右子节点？     
 -> 以小顶堆来说，答案应该是 ***下沉到较小的子节点处***，
 
-<img src="../images/Heap/down1.jpeg" width="250px">    
-<img src="../images/Heap/down2.jpeg" width="290px">
+<img src="../images/Heap/down1.jpeg" width="500px">    
+<img src="../images/Heap/down2.jpeg" width="5000px">
 
-<img src="../images/Heap/down3.jpeg" width="250px">    
-<img src="../images/Heap/down4.jpeg" width="350px">
+<img src="../images/Heap/down3.jpeg" width="500px">    
+<img src="../images/Heap/down4.jpeg" width="500px">
 
 
 #### 入堆
@@ -57,9 +57,9 @@
 
 新插入的节点可能不满足堆的性质，这一次我们需要执行上浮操作。上浮只需要拿当**前节点和父节点**进行比对就可以了， 由于省去了判断左右子节点哪个更小的过程，因此更加简单。
 
-<img src="../images/Heap/up1.jpeg" width="340px">    
-<img src="../images/Heap/up2.jpeg" width="490px">
-<img src="../images/Heap/up3.jpeg" width="375px">    
+<img src="../images/Heap/up1.jpeg" width="500px">    
+<img src="../images/Heap/up2.jpeg" width="500px">
+<img src="../images/Heap/up3.jpeg" width="500px">    
 
 对于完全二叉树来说使用数组实现非常方便。因为：
 - 如果节点在数组中的下标为 i，那么其左子节点下标为 $2 \times i$，右节点为 $2 \times i$+1。
