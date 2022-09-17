@@ -68,7 +68,7 @@ https://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=678970&page=1&auth
     - [路径相关问题：](#路径相关问题)
     - [LCA问题：](#lca问题)
     - [其他：](#其他)
-- [第 9 章 深度优先搜索](#第-9-章-深度优先搜索)
+- [第 九 章 深度优先搜索](#第-九-章-深度优先搜索)
   - [基本问题：](#基本问题-5)
   - [深度优先搜索 题目列表：](#深度优先搜索-题目列表)
     - [排列组合：](#排列组合)
@@ -843,7 +843,7 @@ https://google.github.io/styleguide/pyguide.html
 #### LCA问题：
 - [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 - [<font color="#228B22"> Lint-474. Lowest Common Ancestor II </font>](https://www.lintcode.com/problem/474/)
-- [<font color="#228B22"> Lint-578. Lowest Common Ancestor III </font>](https://www.lintcode.com/problem/lowest-common-ancestor-iii/solution)
+- [<font color="#228B22"> 1650. Lowest Common Ancestor of a Binary Tree III </font>](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/)
 
 #### 其他：
 - [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
@@ -855,7 +855,7 @@ https://google.github.io/styleguide/pyguide.html
 
 
 
-## 第 9 章 深度优先搜索
+## 第 九 章 深度优先搜索
 
 ### 基本问题：
 （1）DFS中递归的基本要素  

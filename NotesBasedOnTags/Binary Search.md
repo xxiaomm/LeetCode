@@ -1,31 +1,47 @@
-
-- [Binary Search](#binary-search)
-  - [Hints to use](#hints-to-use)
-  - [Complexity](#complexity)
-  - [总结](#总结)
-  - [基本模板](#基本模板)
-    - [寻找目标值](#寻找目标值)
-    - [寻找最左边界](#寻找最左边界)
-    - [寻找最右边界](#寻找最右边界)
-  - [题型分类](#题型分类)
-    - [二维数组](#二维数组)
-    - [二叉搜索树](#二叉搜索树)
-    - [局部有序(先降后升或先升后降)](#局部有序先降后升或先升后降)
-    - [自己构造有序序列(难度高, 需要观察)](#自己构造有序序列难度高-需要观察)
-    - [找最值](#找最值)
-    - [找极值(求第 k 大/小的数)](#找极值求第-k-大小的数)
-  - [二分法四大应用技巧](#二分法四大应用技巧)
-    - [能力检测（普通二分的泛化）](#能力检测普通二分的泛化)
-    - [计数二分（普通二分的泛化）](#计数二分普通二分的泛化)
-    - [前缀和二分（构建有序序列）](#前缀和二分构建有序序列)
-    - [插入排序二分（构建有序序列）](#插入排序二分构建有序序列)
-  - [题目推荐](#题目推荐)
-  - [Reference](#reference)
+[易潇](https://github.com/lilyzhaoyilu/LeetCode-Notes/blob/master/NotesBasedOnCategories/Binary%20Search.md)   
+[易潇updated](https://github.com/lilyzhaoyilu/LeetCode-Notes/blob/master/NotesBasedOnCategories/Binary%20Search%20Updated.md)   
+[91讲义](https://github.com/azl397985856/leetcode/blob/master/91/binary-search.md)     
+[力扣加加（上）](https://leetcode-solution-leetcode-pp.gitbook.io/leetcode-solution/thinkings/binary-search-1)   [lucifer博客（上）](https://lucifer.ren/blog/2021/03/08/binary-search-1/)         
+[力扣加加（下）](https://leetcode-solution-leetcode-pp.gitbook.io/leetcode-solution/thinkings/binary-search-2)   [lucifer博客（下）](https://lucifer.ren/blog/2021/03/23/binary-search-2/)        
+[labuladong](https://labuladong.github.io/algo/2/20/29/)     
 
 
-# Binary Search
- 
+
+
+
+
+- [简介](#简介)
+  - [定义 - *折半* 法](#定义---折半-法)
+- [Hints to use](#hints-to-use)
+- [Complexity](#complexity)
+- [总结](#总结)
+- [基本模板](#基本模板)
+  - [寻找目标值](#寻找目标值)
+  - [寻找最左边界](#寻找最左边界)
+  - [寻找最右边界](#寻找最右边界)
+- [题型分类](#题型分类)
+  - [二维数组](#二维数组)
+  - [二叉搜索树](#二叉搜索树)
+  - [局部有序(先降后升或先升后降)](#局部有序先降后升或先升后降)
+  - [自己构造有序序列(难度高, 需要观察)](#自己构造有序序列难度高-需要观察)
+  - [找最值](#找最值)
+  - [找极值(求第 k 大/小的数)](#找极值求第-k-大小的数)
+- [二分法四大应用技巧](#二分法四大应用技巧)
+  - [能力检测（普通二分的泛化）](#能力检测普通二分的泛化)
+  - [计数二分（普通二分的泛化）](#计数二分普通二分的泛化)
+  - [前缀和二分（构建有序序列）](#前缀和二分构建有序序列)
+  - [插入排序二分（构建有序序列）](#插入排序二分构建有序序列)
+- [题目推荐](#题目推荐)
+
+
+## 简介
 二分查找又称折半搜索算法。 狭义地来讲，二分查找是一种在有序数组查找某一特定元素的搜索算法。这同时也是大多数人所知道的一种说法。实际上， 广义的二分查找是将问题的规模缩小到原有的一半。类似的，三分法就是将问题规模缩小为原来的 1/3。   
+
+### 定义 - *折半* 法
+
+**因为「二分」的本质是二段性，并非单调性。只要一段满足某个性质，另外一段不满足某个性质，就可以用「二分」。**    
+解空间：题目所有可能的解构成的集合，一定是有穷尽的，不然无法继续。     
+有序：1. 题目有序 2.自己构造有序(比如前缀和: 注意元素全为正 / 负)
 
 **关键点:**
 - 根据什么条件
@@ -35,7 +51,7 @@
 
 ## Hints to use
 
-1. 排序数组 (30% - 40%) (如果无序考虑排序，注意排序算法的时间复杂度)
+1. 排序数组 (30% - 40%) (如果考虑排序，注意排序算法的时间复杂度)
 2. 找比 O(N)更小时间复杂度算法 (99%)
 3. 找到数组中的某个位置，使得左或右某半部分不满足条件(100%)
 4. 找到一个最大/最小值使某个条件被满足(90%)
@@ -52,7 +68,7 @@
   - 递归：$O(logN)$（无尾调用消除）
 
 ## 总结
-1. 先定义***解空间***, 即 left 和 right 的初始值; （非常重要）
+1. 先定义 ***解空间*** , 即 left 和 right 的初始值; （非常重要）
 2. 根据题意确定循环结束条件  
    - 取 mid 和 target 做对比（可能是要找的，可能是数组第一个 / 最后一个） （非常重要）
    - 如果是整体有序通常只要比较 nums[mid]和 target, 若局部有序则要和特定元素比较 -> 加特定条件    
@@ -106,7 +122,7 @@ class Solution {
 
 ### 寻找最左边界
 
-- (最左二分不断收缩右边界，最终返回左边界)  
+(最左二分不断收缩右边界，最终返回左边界)  
 - 搜索 [left, right]
 - 终止条件: left <= right
 - 循环内, 比较 nums[mid] 和 target :
@@ -175,7 +191,8 @@ class Solution {
 
 ### 寻找最右边界
 
-- (最右二分不断收缩左边界，最终返回右边界)
+(最右二分不断收缩左边界，最终返回右边界)
+
 - 搜索 [left, right]
 - 终止条件: left <= right
 - 循环内, 比较 nums[mid] 和 target :
@@ -429,14 +446,9 @@ for a in A:
 
 > 后面三个题建议一起做
 
+- [Binaray Search 757. Triple Inversion](https://binarysearch.com/problems/Triple-Inversion)
+
+
 
 *特别需要注意的是**有无重复元素**对二分算法影响很大，我们需要小心对待。*
 
-
-## Reference  
-[易潇](https://github.com/lilyzhaoyilu/LeetCode-Notes/blob/master/NotesBasedOnCategories/Binary%20Search.md)   
-[易潇updated](https://github.com/lilyzhaoyilu/LeetCode-Notes/blob/master/NotesBasedOnCategories/Binary%20Search%20Updated.md)   
-[91讲义](https://github.com/azl397985856/leetcode/blob/master/91/binary-search.md)     
-[lucifer二分（上）](https://lucifer.ren/blog/2021/03/08/binary-search-1/)      
-[lucifer二分（下）](https://lucifer.ren/blog/2021/03/23/binary-search-2/)        
-[labuladong](https://labuladong.github.io/algo/2/20/29/)

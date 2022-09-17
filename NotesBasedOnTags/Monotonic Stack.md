@@ -30,6 +30,8 @@ Space: O(n)
 ### 几种情况的模板
 
 #### 模板: 找第一个大于它的数 -> 单调递减栈
+逆推 -> 求左侧/右侧比它小的 最大的数 
+
 题目: 
 - [496. Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) 
 - [503. Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/) 
@@ -59,6 +61,8 @@ class Solution {
 ```
 
 #### 模板: 找第一个小于它的数 -> 单调递增栈
+逆推 -> 求左侧/右侧比它大的 最小的数  
+
 题目:   
 - [1475. Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/)
 
