@@ -4,12 +4,15 @@
 
 
 - [核心](#核心)
+  - [技巧](#技巧)
 - [两种实现](#两种实现)
   - [基于链表的实现- 跳表](#基于链表的实现--跳表)
   - [基于数组的实现 - 二叉堆](#基于数组的实现---二叉堆)
     - [出堆](#出堆)
     - [入堆](#入堆)
     - [实现](#实现)
+- [三个技巧](#三个技巧)
+  - [固定堆](#固定堆)
 
 
 <img src="../images/Heap/Heap脑图.jpeg" >
@@ -25,6 +28,21 @@
 堆只能求极值。比如能求最小值，但不能直接求第 k 小的值。
 那我们是不是先求最小的值，然后将其出队。然后继续求最小的值，这个时候求的就是第 2 小了。如果要求第 k 小，那就如此反复 k 次即可。
 这个过程，你会发现数据是在**动态变化**的，对应的就是堆的大小在变化。
+
+
+### 技巧
+
+使用元组的堆（最小堆）-> 作用: 
+- 携带一些额外的信息。 比如我想求二维矩阵中第 k 小数，当然是以值作为键。但是处理过程又需要用到其行和列信息，那么使用元组就很合适，比如 (val, row, col)这样的形式。
+- 想根据两个键进行排序，一个主键一个副键。这里面又有两种典型的用法，
+  - 一种是两个都是同样的顺序，比如都是顺序或者都是逆序。
+  - 另一种是两个不同顺序排序，即一个是逆序一个是顺序。
+
+```java
+h = [(1,2,3), (4,5,6), (2,1,3),(4,2,8)]
+```
+<img src="../images/Heap/minHeapWithTuples.jpeg" width="500px">
+
 
 ## 两种实现
 
@@ -44,7 +62,7 @@
 -> 以小顶堆来说，答案应该是 ***下沉到较小的子节点处***，
 
 <img src="../images/Heap/down1.jpeg" width="500px">    
-<img src="../images/Heap/down2.jpeg" width="5000px">
+<img src="../images/Heap/down2.jpeg" width="500px">
 
 <img src="../images/Heap/down3.jpeg" width="500px">    
 <img src="../images/Heap/down4.jpeg" width="500px">
@@ -170,6 +188,19 @@ public class MinHeap {
 ```
 
 
+## 三个技巧
+
+固定堆的大小 k 不变，代码上可通过每 pop 出去一个就 push 进来一个来实现。
+
+「典型应用」: 求第k小的数。
+- 全部入堆(小顶堆) -> 第 k 个 pop() 出去的即为结果。
+- 建立大顶堆(size = k)，若有新的数字, pop()出去较大的, 较小的入堆, 一直维持堆的size 为 k, 最后堆顶即为结果。
+
+
+
+### 固定堆
+
+
 
 题目:
 
@@ -178,5 +209,7 @@ public class MinHeap {
 - []
 - []
 - [1642. Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/)
+- [295. Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/)
+- 
 
 

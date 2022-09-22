@@ -1,6 +1,9 @@
 
-[91讲义](https://leetcode-solution.cn/solutionDetail?type=2&id=2002&max_id=2008)
-
+[91讲义](https://leetcode-solution.cn/solutionDetail?type=2&id=2002&max_id=2008)  
+[labuladong](https://labuladong.gitee.io/algo/2/19/18/)   
+[力扣加加](https://leetcode-solution-leetcode-pp.gitbook.io/leetcode-solution/thinkings/linked-list)    
+[易潇](https://github.com/lilyzhaoyilu/LeetCode-Notes/blob/master/NotesBasedOnCategories/%E7%AC%94%E8%AE%B0LinkedList.md)   
+https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E9%93%BE%E8%A1%A8.md
 
 
 - [总结](#总结)
@@ -27,7 +30,6 @@
   - [快慢指针](#快慢指针)
   - [穿针引线](#穿针引线)
   - [先穿再排后判空](#先穿再排后判空)
-- [Reference](#reference)
 
 
 <img src="../images/LinkedList/LinkedList脑图.png">
@@ -393,10 +395,3 @@ b.next = d
 
 先把穿的都写了，然后排序，最后再看需要判空不。
 
-## Reference
-
-[labuladong](https://labuladong.gitee.io/algo/2/19/18/)   
-[lucifer链表专题](https://leetcode-solution-leetcode-pp.gitbook.io/leetcode-solution/thinkings/linked-list)    
-[lucifer 公众号](https://mp.weixin.qq.com/s?__biz=MzI4MzUxNjI3OA==&mid=2247485582&idx=1&sn=eff845460e91be97026c937b229c2989&chksm=eb88c497dcff4d81e08ac30951b160f0083bc9fe5a2b64b8e1ea9e0988e14a9df2b56515f508&token=450700782&lang=zh_CN#rd)
-[狗头](https://github.com/lilyzhaoyilu/LeetCode-Notes/blob/master/NotesBasedOnCategories/%E7%AC%94%E8%AE%B0LinkedList.md)   
-https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E9%93%BE%E8%A1%A8.md
