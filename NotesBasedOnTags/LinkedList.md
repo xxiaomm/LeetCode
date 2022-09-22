@@ -30,6 +30,7 @@ https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7
   - [快慢指针](#快慢指针)
   - [穿针引线](#穿针引线)
   - [先穿再排后判空](#先穿再排后判空)
+- [题目推荐](#题目推荐)
 
 
 <img src="../images/LinkedList/LinkedList脑图.png">
@@ -395,3 +396,29 @@ b.next = d
 
 先把穿的都写了，然后排序，最后再看需要判空不。
 
+
+## 题目推荐
+
+- [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
+- [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+- [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+- [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
+- [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
+- [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
+- [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)
+- [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
+- [86. Partition List](https://leetcode.com/problems/partition-list/)
+- [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
+- [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/)
+- [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+- [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
+- [143. Reorder List](https://leetcode.com/problems/reorder-list/)
+- [148. Sort List](https://leetcode.com/problems/sort-list/)
+- [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
+- [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
+- [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
+- [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/)
+- [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
+- [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
+- [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
+- [146. LRU Cache](https://leetcode.com/problems/lru-cache/)
