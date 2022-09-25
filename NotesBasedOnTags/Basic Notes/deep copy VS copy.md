@@ -15,8 +15,7 @@
 - 如果属性是基本类型(int,double,long,boolean等)，拷贝的就是基本类型的值；
 - 如果属性是引用类型，拷贝的就是内存地址（即复制引用但不复制引用的对象） ，因此如果其中一个对象改变了这个地址，就会影响到另一个对象。
 <!-- 图片 -->
-<img src="../images/Basic%20Notes/shallow%20copy.png" /> 
-
+<img src="../../images/Basic%20Notes/shallow%20copy.png" /> 
 
 实现方法：
 - 在需要拷贝的类上实现Cloneable接口并重写其clone()方法。
@@ -25,7 +24,7 @@
 ### 深拷贝(Deep Copy)
 对基本数据类型进行值传递，对引用数据类型，创建一个新的对象，并复制其内容，此为深拷贝。    
 在对引用数据类型进行拷贝的时候，创建了一个新的对象，并且复制其内的成员变量。
-<img src="../images/Basic%20Notes/deep%20copy.png" /> 
+<img src="../../images/Basic%20Notes/deep%20copy.png" /> 
 
 实现方式：
 - 重写clone()方法实现深拷贝：将类中所有自定义引用变量的类也去实现Cloneable接口实现clone()方法。对于字符类可以创建一个新的字符串实现拷贝。
