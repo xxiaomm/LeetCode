@@ -1,9 +1,9 @@
 
 
 
-<img src="../../images/BQ/14LPs.png" width="800px">
+<img src="../../images/BQ/14LPs.png" width="1000px">
 
-<img src="../../images/BQ/STAR.png" width="800px">
+<img src="../../images/BQ/STAR.png" width="600px">
 
 ## Customer Obsession 顾客至上
 
