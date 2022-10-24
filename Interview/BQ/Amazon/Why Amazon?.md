@@ -4,9 +4,9 @@
 
 ## Be careful
 
-1. Not staying quiet. Be likable. -> imporvise sth. like brain storm out loud to ***keep audience engaged at all times***.
+1. Not staying quiet. Be likable. -> imporvise sth. like brainstorm out loud to ***keep audience engaged at all times***.
 2. Amazon dress code: casual 休闲
-3. Instead of negative, use positive approach.
+3. Instead of negative, use **positive** approach.
 4. Simle, but not speak too fast and laugh too much.
 5. Not complain other. Focus on ***yourself***. Think of a ***personal story***.
 6. Say sth related to those 14 LPs. ()

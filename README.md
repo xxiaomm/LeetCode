@@ -6,13 +6,36 @@ Aim to practice algorithm for interviews.
 # Quick Links
 [Notes Based On Tags](NotesBasedOnTags)
 
+## Data Structure
 
-# Language
-Language used: Java   
-Languages for notes: English and Chinese.  
+- [Linked List](../LeetCode/NotesBasedOnTags/LinkedList.md)
+- [Tree](../LeetCode/NotesBasedOnTags/Binary%20Tree.md)
+- [Stack](../LeetCode/NotesBasedOnTags/Stack.md)
+- [Monotonic Stack](../LeetCode/NotesBasedOnTags/Monotonic%20Stack.md)
+- [Queue & Heap](../LeetCode/NotesBasedOnTags/Heap(Priority%20Queue).md)
+- [Hash Table](../LeetCode/NotesBasedOnTags/Hash%20Table.md)
+- [Graph](../LeetCode/NotesBasedOnTags/Graph%20Basic%20&%20Algo.md)
+- [Array & Matrix & Prefix Sum](../LeetCode/NotesBasedOnTags/Prefix%20Sum.md)
+- [String]()
+  
+//
+- [Sets]()
+- [位运算]()
+- [Bags]()
 
+## Algorithm
 
-## Illustration
+- [Two Pointer](../LeetCode/NotesBasedOnTags/Two%20Pointer.md)  
+- [Sliding Window](../LeetCode/NotesBasedOnTags/Sliding%20Window.md)  
+- [Binary Search](../LeetCode/NotesBasedOnTags/Binary%20Search.md)  
+- [Searching]()  
+- [Sorting](../LeetCode/NotesBasedOnTags/Sorting.md)
+- [DP](../LeetCode/NotesBasedOnTags/DP.md)
+- [Greedy](../LeetCode/NotesBasedOnTags/Greedy.md)
+- [Divide and Conquer](../LeetCode/NotesBasedOnTags/分治.md)
+  
+//
+- [Math]()
 
 # Recommended blogger
 
@@ -20,7 +43,7 @@ Languages for notes: English and Chinese.
 
 [labuladong](https://labuladong.github.io/algo/) &nbsp; &nbsp; [对应github](https://github.com/labuladong/fucking-algorithm)    
 [力扣加加](https://leetcode-solution-leetcode-pp.gitbook.io/leetcode-solution/thinkings) &nbsp; &nbsp;  [lucifer博客](https://lucifer.ren/blog/categories/)   
-[负雪明烛博客:模板](https://fuxuemingzhu.cn/leetcode/)  &nbsp; &nbsp;    [负雪明烛csdn](https://fuxuemingzhu.blog.csdn.net/)   
+[负雪明烛博客](https://fuxuemingzhu.cn/leetcode/)  &nbsp; &nbsp;    [负雪明烛csdn:模板](https://fuxuemingzhu.blog.csdn.net/)    [负雪明烛 博客园](https://www.cnblogs.com/fuxuemingzhu/)   
 [aaronice分类和模板总结的很好](https://aaronice.gitbook.io/lintcode/)   
 
 [宫水三叶题解](https://github.com/SharingSource/LogicStack-LeetCode/wiki)  &nbsp; &nbsp; [宫水三叶博客](https://sharingsource.github.io/tags/)   
@@ -29,6 +52,7 @@ Languages for notes: English and Chinese.
 [Back To Back SWE](https://www.youtube.com/channel/UCmJz2DV1a3yfgrR7GqRtUUA)    
 [NeetCode](https://www.youtube.com/c/neetcode)    
 [李威威](https://liweiwei1419.gitee.io/leetcode-algo/categories/)   
+[Grandyang](https://www.cnblogs.com/grandyang/)
 
 [小土刀博客](https://wdxtub.com/interview/14520609088903.html)  &nbsp; &nbsp;  [小土刀github](https://github.com/wdxtub) 
 
@@ -69,6 +93,14 @@ Languages for notes: English and Chinese.
 ## [SD](/Interview/OOD%20%26%20SD/README.md)
 
 
+
+
+# Language
+Language used: Java   
+Languages for notes: English and Chinese.  
+
+
+## Illustration
 
 
 
