@@ -1,10 +1,23 @@
+
+
 # LeetCode Notes
 
 This is a collection of my LeetCode solutions and notes.   
 Aim to practice algorithm for interviews.   
 
+
+
+
 # Quick Links
-[Notes Based On Tags](NotesBasedOnTags)
+
+- [Notes Based On Tags](NotesBasedOnTags)
+- [Recommended blogger](#recommended-blogger)
+  - [刷题相关](#刷题相关)
+  - [八股](#八股)
+  - [免费课程和开源链接](#免费课程和开源链接)
+  - [OOD](#ood)
+  - [SD](#sd)
+  
 
 ## Data Structure
 
@@ -29,6 +42,7 @@ Aim to practice algorithm for interviews.
 - [Sliding Window](../LeetCode/NotesBasedOnTags/Sliding%20Window.md)  
 - [Binary Search](../LeetCode/NotesBasedOnTags/Binary%20Search.md)  
 - [Searching]()  
+- [BackTracking](../LeetCode/NotesBasedOnTags/Backtracking.md)
 - [Sorting](../LeetCode/NotesBasedOnTags/Sorting.md)
 - [DP](../LeetCode/NotesBasedOnTags/DP.md)
 - [Greedy](../LeetCode/NotesBasedOnTags/Greedy.md)
@@ -40,7 +54,7 @@ Aim to practice algorithm for interviews.
 # Recommended blogger
 
 ## 刷题相关
-
+[LeetCode-CookBook](https://books.halfrost.com/leetcode/) &nbsp; &nbsp; [CookBook-github](https://github.com/halfrost/LeetCode-Go)   
 [labuladong](https://labuladong.github.io/algo/) &nbsp; &nbsp; [对应github](https://github.com/labuladong/fucking-algorithm)    
 [力扣加加](https://leetcode-solution-leetcode-pp.gitbook.io/leetcode-solution/thinkings) &nbsp; &nbsp;  [lucifer博客](https://lucifer.ren/blog/categories/)   
 [负雪明烛博客](https://fuxuemingzhu.cn/leetcode/)  &nbsp; &nbsp;    [负雪明烛csdn:模板](https://fuxuemingzhu.blog.csdn.net/)    [负雪明烛 博客园](https://www.cnblogs.com/fuxuemingzhu/)   
@@ -98,10 +112,6 @@ Aim to practice algorithm for interviews.
 # Language
 Language used: Java   
 Languages for notes: English and Chinese.  
-
-
-## Illustration
-
 
 
  
