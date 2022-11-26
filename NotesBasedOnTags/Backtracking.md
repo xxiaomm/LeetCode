@@ -66,7 +66,7 @@ public void backtrack(路径path, 选择列表):
 
 ### 技巧
 
-1. 可能需要排序;
+1. 可能需要排序; *(使用while跳过duplicates, 必须有序)*
 2. 已排序（组合）: 传递参数index, 使用 while 循环, 选择重复元素 / 跳过重复元素;
 3. 未排序（排列）: 使用 set / boolean 数组, 标记已选择元素;
 4. 排列: for 循环从 0 开始;

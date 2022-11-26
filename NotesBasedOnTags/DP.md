@@ -4,13 +4,14 @@
 
 - [简介](#简介)
   - [三要素](#三要素)
+  - [确定用dp解题的两个技巧](#确定用dp解题的两个技巧)
   - [Complexity](#complexity)
+- [路径问题](#路径问题)
+  - [空间优化](#空间优化)
 - [背包问题](#背包问题)
   - [0-1 背包](#0-1-背包)
   - [完全背包](#完全背包)
   - [](#)
-- [路径问题](#路径问题)
-  - [空间优化](#空间优化)
 
 
 [OI-wiki](https://oi-wiki.org/dp/knapsack/)  
@@ -22,14 +23,52 @@
 动态规划问题的一般形式就是求最值, 求解动态规划的核心问题是穷举。
 
 ### 三要素
+
 - 「最优子结构」: 是否能够通过子问题的最值得到原问题的最值。
-- 「重叠子问题」: 暴力穷举的话效率会很低，所以需要你使用「备忘录」或者「DP table」来优化穷举过程，避免不必要的计算。
-- 「状态转移方程」: 正确的状态转移方程 -> 正确地穷举。
+- 「重叠子问题」: 暴力穷举效率很低，需要使用「备忘录」或者「DP table」优化穷举过程，避免不必要的计算。
+- 「状态转移方程」: 正确的状态转移方程 -> 正确地穷举。「不重不漏」: 求最值->「不漏」，求方案数->「不重不漏」。
   - 思考状态转移方程的思路:   
    明确 base case -> 明确「状态」-> 明确「选择」 -> 定义 dp 数组/函数的含义。
 
+
+### 确定用dp解题的两个技巧
+
+- 「有无后效性」: 如果对于某个状态，我们可以只关注状态的值，而不需要关注状态是如何转移过来的话，那么这就是一个无后效性的问题，可以考虑使用 DP 解决。
+- 「数据范围」: 如果数据范围是 10^5 ~ 10^6 的话，可以考虑是不是可以使用一维 DP 来解决；如果数据范围是 10^2 ~ 10^3 的话，可以考虑是不是可以使用二维 DP 来做......
+
+[根据计算量判断是否超时](https://mp.weixin.qq.com/s?__biz=MzU4NDE3MTEyMA==&mid=2247484130&idx=5&sn=de027e77fd0cc185bd5d753bab38f5d0&scene=21#wechat_redirect)
+
+
 ### Complexity
-Time Complexity: 就是用子问题个数乘以解决一个子问题需要的时间。
+
+Time Complexity: 子问题个数乘以解决一个子问题需要的时间。有多少个状态，复杂度就是多少。
+因此一维 DP 的复杂度通常是线性的O(n)，而二维 DP 的复杂度通常是平方的O(n^2)。
+
+
+## 路径问题
+
+[宫水三叶-路径问题系列](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU4NDE3MTEyMA==&action=getalbum&album_id=1773144264147812354&scene=173&from_msgid=2247485580&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
+
+
+
+题目:
+- [62. Unique Paths](https://leetcode.com/problems/unique-paths/)
+- [63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
+- [64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) 【思考：如果需要输出路径？】
+- [120. Triangle](https://leetcode.com/problems/triangle/)
+- [931. Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)
+- [1289. Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii/)
+- [1575. Count All Possible Routes](https://leetcode.com/problems/count-all-possible-routes/)
+- [576. Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/)
+- [1301. Number of Paths with Max Score](https://leetcode.com/problems/number-of-paths-with-max-score/)
+
+### 空间优化
+
+- 滚动数组 (推荐)
+  - O(n^2) -> O(n): 每次只需要用到上一次的数据(不选 ```f[i-1]j]```，选择 ```f[i-1][j]```)，可以降为 ```f[2][n]``` ->  填入顺序变换方式 ```f [i & 1][j]```
+  - O(n^2) - O(1): 利用修改原数组，从后往前遍历
+- 根据状态依赖调整迭代/循环的方向
+
 
 
 ## 背包问题
@@ -72,26 +111,3 @@ https://github.com/SharingSource/LogicStack-LeetCode/wiki/%E8%83%8C%E5%8C%85-DP
 
 
 
-## 路径问题
-
-[宫水三叶](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU4NDE3MTEyMA==&action=getalbum&album_id=1773144264147812354&scene=173&from_msgid=2247485580&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
-
-
-
-题目:
-- [62. Unique Paths](https://leetcode.com/problems/unique-paths/)
-- [63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)
-- [64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)
-- [120. Triangle](https://leetcode.com/problems/triangle/)
-- [931. Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)
-- [1289. Minimum Falling Path Sum II](https://leetcode.com/problems/minimum-falling-path-sum-ii/)
-- [1575. Count All Possible Routes](https://leetcode.com/problems/count-all-possible-routes/)
-- [576. Out of Boundary Paths](https://leetcode.com/problems/out-of-boundary-paths/)
-- [1301. Number of Paths with Max Score](https://leetcode.com/problems/number-of-paths-with-max-score/)
-
-### 空间优化
-
-- 滚动数组 (推荐)
-  - O(n^2) -> O(n): 每次只需要用到上一次的数据(不选 f[i-1]j]，选择 f[i-1][j-x])，可以降为 f[2][n] ->  填入顺序变换方式 f [ i & 1 ][ j ] 
-  - O(n^2) - O(1): 利用修改原数组，从后往前遍历
-- 根据状态依赖调整迭代/循环的方向
