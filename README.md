@@ -59,6 +59,7 @@ Aim to practice algorithm for interviews.
 [力扣加加](https://leetcode-solution-leetcode-pp.gitbook.io/leetcode-solution/thinkings) &nbsp; &nbsp;  [lucifer博客](https://lucifer.ren/blog/categories/)   
 [负雪明烛博客](https://fuxuemingzhu.cn/leetcode/)  &nbsp; &nbsp;    [负雪明烛csdn:模板](https://fuxuemingzhu.blog.csdn.net/)    [负雪明烛 博客园](https://www.cnblogs.com/fuxuemingzhu/)   
 [aaronice分类和模板总结的很好](https://aaronice.gitbook.io/lintcode/)   
+[古城算法-题目分类不错](https://www.youtube.com/@user-my5in2fq5c)
 
 [宫水三叶题解](https://github.com/SharingSource/LogicStack-LeetCode/wiki)  &nbsp; &nbsp; [宫水三叶博客](https://sharingsource.github.io/tags/)   
 [hk029: github](https://github.com/hk029)  &nbsp; &nbsp; [hk029: gitbook中文题解](https://hk029.gitbooks.io/leetbook/content/topic_include.html)   
