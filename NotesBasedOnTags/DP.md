@@ -12,6 +12,8 @@
   - [0-1 背包](#0-1-背包)
   - [完全背包](#完全背包)
   - [](#)
+- [一些算法](#一些算法)
+  - [Kadane’s Algorithm](#kadanes-algorithm)
 
 
 [OI-wiki](https://oi-wiki.org/dp/knapsack/)  
@@ -108,6 +110,18 @@ https://github.com/SharingSource/LogicStack-LeetCode/wiki/%E8%83%8C%E5%8C%85-DP
 
 ### 
 
+
+
+
+## 一些算法
+
+### Kadane’s Algorithm
+https://zhuanlan.zhihu.com/p/96014673
+https://www.likecs.com/show-307247072.html 
+
+主要用来解决最大子序列的相关问题：The algorithm keeps track of the tentative maximum subsequence in (maxSum, maxStartIndex, maxEndIndex). It accumulates a partial sum in currentMaxSum and updates the optimal range when this partial sum becomes larger than maxSum.
+
+**小技巧：** 如果序列中有负数影响结果的情况下，要记录prefix和suffix。
 
 
 
