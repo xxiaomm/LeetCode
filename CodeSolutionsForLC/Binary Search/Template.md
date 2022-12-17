@@ -11,11 +11,7 @@
 
 - **Algo:**    
 - **Steps:**  
-  - 最basic的Binary Search;
-  - calculate the mid:
-   1. nums[mid] == target: return mid;
-   2. nums[mid] > target: right = mid - 1 找左边;
-   3. nums[mid] < target: left = mid + 1 找右边;
+  - xx
 
 
 ### Code
