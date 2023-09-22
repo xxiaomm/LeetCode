@@ -22,14 +22,14 @@ Aim to practice algorithm for interviews.
 
 ## Data Structure
 
-- [Linked List](../LeetCode/NotesBasedOnTags/LinkedList.md)
-- [Tree](../LeetCode/NotesBasedOnTags/Binary%20Tree.md)
-- [Stack](../LeetCode/NotesBasedOnTags/Stack.md)
-- [Monotonic Stack](../LeetCode/NotesBasedOnTags/Monotonic%20Stack.md)
-- [Queue & Heap](../LeetCode/NotesBasedOnTags/Heap(Priority%20Queue).md)
-- [Hash Table](../LeetCode/NotesBasedOnTags/Hash%20Table.md)
-- [Graph](../LeetCode/NotesBasedOnTags/Graph%20Basic%20&%20Algo.md)
-- [Array & Matrix & Prefix Sum](../LeetCode/NotesBasedOnTags/Prefix%20Sum.md)
+- [Linked List](NotesBasedOnTags/LinkedList.md)
+- [Tree](NotesBasedOnTags/Binary%20Tree.md)
+- [Stack](NotesBasedOnTags/Stack.md)
+- [Monotonic Stack](NotesBasedOnTags/Monotonic%20Stack.md)
+- [Queue & Heap](NotesBasedOnTags/Heap(Priority%20Queue).md)
+- [Hash Table](NotesBasedOnTags/Hash%20Table.md)
+- [Graph](NotesBasedOnTags/Graph%20Basic%20&%20Algo.md)
+- [Array & Matrix & Prefix Sum](NotesBasedOnTags/Prefix%20Sum.md)
 - [String]()
   
 //
@@ -39,15 +39,15 @@ Aim to practice algorithm for interviews.
 
 ## Algorithm
 
-- [Two Pointer](../LeetCode/NotesBasedOnTags/Two%20Pointer.md)  
-- [Sliding Window](../LeetCode/NotesBasedOnTags/Sliding%20Window.md)  
-- [Binary Search](../LeetCode/NotesBasedOnTags/Binary%20Search.md)  
+- [Two Pointer](NotesBasedOnTags/Two%20Pointer.md)  
+- [Sliding Window](NotesBasedOnTags/Sliding%20Window.md)  
+- [Binary Search](NotesBasedOnTags/Binary%20Search.md)  
 - [Searching]()  
-- [BackTracking](../LeetCode/NotesBasedOnTags/Backtracking.md)
-- [Sorting](../LeetCode/NotesBasedOnTags/Sorting.md)
-- [DP](../LeetCode/NotesBasedOnTags/DP.md)
-- [Greedy](../LeetCode/NotesBasedOnTags/Greedy.md)
-- [Divide and Conquer](../LeetCode/NotesBasedOnTags/分治.md)
+- [BackTracking](NotesBasedOnTags/Backtracking.md)
+- [Sorting](NotesBasedOnTags/Sorting.md)
+- [DP](NotesBasedOnTags/DP.md)
+- [Greedy](NotesBasedOnTags/Greedy.md)
+- [Divide and Conquer](NotesBasedOnTags/分治.md)
   
 //
 - [Math]()
