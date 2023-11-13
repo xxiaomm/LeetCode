@@ -1,7 +1,7 @@
 
 [宫水三叶](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzU4NDE3MTEyMA==&action=getalbum&album_id=1748787532814696454#wechat_redirect)    
 [91讲义](https://github.com/xxiaomm/91Days-7.15-10.13/blob/master/%E8%AE%B2%E4%B9%89/3.%20%E4%B8%93%E9%A2%98%E7%AF%87/07.%20%E8%B4%AA%E5%BF%83.pdf)    
-[labuladong](https://labuladong.gitee.io/algo/3/29/99/)    
+[labuladong](https://labuladong.gitee.io/algo/di-er-zhan-a01c6/tan-xin-le-9bedf/tan-xin-su-c41e8/)    
 [solution力扣加加](https://leetcode-solution.cn/solutionDetail?type=2&id=3007&max_id=3008)
 
 
